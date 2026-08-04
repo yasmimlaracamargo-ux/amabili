@@ -9,14 +9,37 @@
             background-color: brown;
             text-align: center;
         }
+        main{
+
+            
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>amabili</h1>
     </header>
+    <main>
+        <div>
+        <h1>seja bem vindo </h1><br>
+        <p>a esse apricativo </p>
+        </div>
+        <div>x
     <a href="https://www.capcut.com/pt-br/">capcut</a> <br>
-    <img src="amabili.jpeg" alt="ela ta escrito capcut">
+    <img src="amabili.jpeg" alt="ela ta escrito capcut"><br>
+    <button>❤️ <span> 0 </span>​ </button>
+    </div>
+    </main>
 
 </body>
+<script>
+        const botao = document.querySelector("button");
+        botao.addEventListener("click", botaoClicado);
+
+        function botaoClicado(){
+            console.log("Fui clicado!");
+            let texto = botao.querySelector("span");
+            texto.textContent++;
+        }
+    </script>
 </html>
